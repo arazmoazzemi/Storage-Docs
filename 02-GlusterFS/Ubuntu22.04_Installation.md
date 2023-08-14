@@ -41,7 +41,7 @@ mkdir -p /export/distributed-data-backup/brick3
 ```
 
 =============================== GlusterFS_Installation ============================================================================
-
+``````
 apt install software-properties-common -y
 
 #https://launchpad.net/~gluster
@@ -52,6 +52,7 @@ sudo apt install glusterfs-server -y
 sudo systemctl start glusterd
 sudo systemctl enable glusterd
 systemctl status glusterd
+``````
 
 ================================ GlusterFS_Configuration ==========================================================================
 #ds01:
