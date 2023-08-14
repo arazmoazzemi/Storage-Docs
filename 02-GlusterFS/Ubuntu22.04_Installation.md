@@ -40,7 +40,7 @@ mkdir -p /export/distributed-data-backup/brick3
 
 ```
 
--*GlusterFS_Installation*
+- *GlusterFS_Installation*
 
 ```
 apt install software-properties-common -y
