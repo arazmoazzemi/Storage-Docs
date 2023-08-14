@@ -159,7 +159,8 @@ ds03:gfs-bsr-vol /export/backup-services glusterfs defaults,_netdev,x-systemd.au
 
 
 - *GlusterFS Client*
-- ```
+
+```
 apt-get update
 apt-get upgrade -y
 apt -y install glusterfs-client
