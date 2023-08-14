@@ -55,8 +55,7 @@ sudo systemctl enable glusterd
 systemctl status glusterd
 ```
 
-================================ GlusterFS_Configuration ==========================================================================
-```
+- *GlusterFS_Configuration*
 #ds01:
 gluster peer probe ds02
 gluster peer probe ds03
@@ -74,7 +73,7 @@ gluster volume start gfs-bsr-vol
 ```
 
 
-============= Options =========================================================================================
+- *Options-
 ```
 #ds01:gfs-sr-vol
 gluster volume set gfs-sr-vol cluster.heal-timeout 5
