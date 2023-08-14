@@ -41,7 +41,7 @@ mkdir -p /export/distributed-data-backup/brick3
 ```
 
 =============================== GlusterFS_Installation ============================================================================
-``````
+```
 apt install software-properties-common -y
 
 #https://launchpad.net/~gluster
@@ -52,9 +52,10 @@ sudo apt install glusterfs-server -y
 sudo systemctl start glusterd
 sudo systemctl enable glusterd
 systemctl status glusterd
-``````
+```
 
 ================================ GlusterFS_Configuration ==========================================================================
+```
 #ds01:
 gluster peer probe ds02
 gluster peer probe ds03
@@ -69,10 +70,11 @@ gluster volume info
 gluster volume start gfs-sr-vol
 gluster volume start gfs-bsr-vol
 #gluster volume start gfs-ddb-vol
-
+```
 
 
 ============= Options =========================================================================================
+```
 #ds01:gfs-sr-vol
 gluster volume set gfs-sr-vol cluster.heal-timeout 5
 gluster volume heal gfs-sr-vol enable
@@ -134,7 +136,7 @@ gluster volume set gfs-bsr-vol network.ping-timeout 2
 gluster volume set gfs-bsr-vol cluster.favorite-child-policy mtime
 gluster volume heal gfs-bsr-vol granular-entry-heal enable
 gluster volume set gfs-bsr-vol cluster.data-self-heal-algorithm full
-
+```
 
 ================ GlusterFS fstab ====================================================================================
 
