@@ -74,7 +74,7 @@ gluster volume start gfs-bsr-vol
 ```
 
 
-- *Options-
+- *Options*
 ```
 #ds01:gfs-sr-vol
 gluster volume set gfs-sr-vol cluster.heal-timeout 5
@@ -139,7 +139,7 @@ gluster volume heal gfs-bsr-vol granular-entry-heal enable
 gluster volume set gfs-bsr-vol cluster.data-self-heal-algorithm full
 ```
 
-================ GlusterFS fstab ====================================================================================
+- *GlusterFS fstab*
 
 #ds01:
 ds01:gfs-sr-vol /export/services glusterfs defaults,_netdev,x-systemd.automount,x-systemd.requires=glusterd.service,backup-volfile-servers=ds02:ds03,log-level=WARNING,log-file=/var/log/gluster.log
@@ -158,7 +158,8 @@ ds03:gfs-bsr-vol /export/backup-services glusterfs defaults,_netdev,x-systemd.au
 
 
 
-============= GlusterFS Client ==========================================================================================
+- *GlusterFS Client*
+- ```
 apt-get update
 apt-get upgrade -y
 apt -y install glusterfs-client
@@ -175,12 +176,12 @@ mount -t glusterfs -o backup-volfile-servers=ds02:ds03 ds01:/gfs-bsr-vol /gluste
 echo "ds01:gfs-sr-vol /glusterfs/gfs-sr-vol glusterfs defaults,_netdev,backup-volfile-servers=ds02:ds03 0 0" >> /etc/fstab
 echo "ds01:gfs-bsr-vol /glusterfs/gfs-bsr-vol glusterfs defaults,_netdev,backup-volfile-servers=ds02:ds03 0 0" >> /etc/fstab
 #echo "ds01:gfs-ddb-vol /glusterfs/gfs-ddb-vol glusterfs defaults,_netdev,backup-volfile-servers=ds02:ds03 0 0" >> /etc/fstab
+```
 
 
 
-
-================= KVM ======================================================================================================
-
+- *KVM*
+```
 nano /etc/sysctl.conf
 net.ipv4.ip_forward = 1
 
@@ -263,37 +264,7 @@ virsh net-list --all
 
 
 
-
-------------------------------------------------------------
-
-https://marcus.mlsorensen.com/cloudstack-extras/devcloud-kvm.tar
-
-
-apt-get install ssh-askpass
-
-virsh -c qemu+ssh://user@host/system
-
-
-
-
-
-
-apt install rpm
-
-
-PubkeyAcceptedKeyTypes=+ssh-dss
-HostKeyAlgorithms=+ssh-dss
-KexAlgorithms=+diffie-hellman-group1-sha1
-
-
-
-
-
-
-Host my.host.com *.myinsecure.net 192.168.1.* 192.168.2.*
-    HostKeyAlgorithms ssh-dss
-    KexAlgorithms diffie-hellman-group1-sha1  
-
+```
 
 
 
