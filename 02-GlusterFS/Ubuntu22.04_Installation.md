@@ -56,6 +56,7 @@ systemctl status glusterd
 ```
 
 - *GlusterFS_Configuration*
+```
 #ds01:
 gluster peer probe ds02
 gluster peer probe ds03
