@@ -140,7 +140,7 @@ gluster volume set gfs-bsr-vol cluster.data-self-heal-algorithm full
 ```
 
 - *GlusterFS fstab*
-
+```
 #ds01:
 ds01:gfs-sr-vol /export/services glusterfs defaults,_netdev,x-systemd.automount,x-systemd.requires=glusterd.service,backup-volfile-servers=ds02:ds03,log-level=WARNING,log-file=/var/log/gluster.log
 ds01:gfs-bsr-vol /export/backup-services glusterfs defaults,_netdev,x-systemd.automount,x-systemd.requires=glusterd.service,backup-volfile-servers=ds02:ds03,log-level=WARNING,log-file=/var/log/gluster.log
@@ -155,7 +155,7 @@ ds02:gfs-bsr-vol /export/backup-services glusterfs defaults,_netdev,x-systemd.au
 ds03:gfs-sr-vol /export/services glusterfs defaults,_netdev,x-systemd.automount,x-systemd.requires=glusterd.service,backup-volfile-servers=ds01:ds02,log-level=WARNING,log-file=/var/log/gluster.log
 ds03:gfs-bsr-vol /export/backup-services glusterfs defaults,_netdev,x-systemd.automount,x-systemd.requires=glusterd.service,backup-volfile-servers=ds01:ds02,log-level=WARNING,log-file=/var/log/gluster.log
 #ds03:gfs-ddb-vol /export/distributed-data-backup glusterfs defaults,_netdev,x-systemd.automount,x-systemd.requires=glusterd.service,backup-volfile-servers=ds01:ds02,log-level=WARNING,log-file=/var/log/gluster.log
-
+```
 
 
 - *GlusterFS Client*
