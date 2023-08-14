@@ -1,3 +1,6 @@
+
+
+```
 lkid
 lsblk -a
 fdisk -l
@@ -35,6 +38,7 @@ echo "UUID="f4d87a77-0e66-450e-9d30-3d475c1c61fb" /export/distributed-data-backu
 mount -a
 mkdir -p /export/distributed-data-backup/brick3
 
+```
 
 =============================== GlusterFS_Installation ============================================================================
 
