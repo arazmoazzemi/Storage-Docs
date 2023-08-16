@@ -42,9 +42,9 @@ ff02::2 ip6-allrouters
 ff02::3 ip6-allhosts
 ```
 
-
-----------------------create <ceph-mgr-dashboard> after configure monitor nodes-------------------------------
-
+----
+*Create create <ceph-mgr-dashboard> after configure monitor nodes:*
+```
 
 apt install ceph-mgr-dashboard -y
 ceph mgr module enable dashboard
@@ -59,7 +59,8 @@ ceph dashboard ac-user-create admin -i passwd.txt administrator
 
 systemctl start ceph-mgr@pve01.service
 journalctl -xeu ceph-mgr@pve01.service
---------------------------------------
+```
+
 
 
 ls /dev | grep sd
