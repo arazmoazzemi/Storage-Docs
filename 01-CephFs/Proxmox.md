@@ -1,17 +1,11 @@
-https://docs.ceph.com/en/quincy/start/intro/
-
-RADOS
-reliable autonomic distributed object store
-
-CRUSH
-controlled replication under scalable hashing
+# Proxmox CephFS
 
 
 
+----
+*Add repsitory*
 
-------------------repsitory-------------------------------------------
-
-
+```
 # deb http://ftp.debian.org/debian bookworm main contrib
 # deb http://ftp.debian.org/debian bookworm-updates main contrib
 
@@ -24,6 +18,8 @@ deb http://security.debian.org/debian-security bookworm-security main contrib
 
 # Ceph Quincy No-Subscription Repository
 deb http://download.proxmox.com/debian/ceph-quincy bookworm no-subscription
+```
+
 
 -----------------------------------hosts------------------------------
 127.0.0.1 localhost.localdomain localhost
