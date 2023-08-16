@@ -62,7 +62,7 @@ journalctl -xeu ceph-mgr@pve01.service
 ```
 
 
-
+```
 ls /dev | grep sd
 ls -l /dev/disks/by-id
 
@@ -74,7 +74,7 @@ ceph-volume lvm zap /dev/sdb --destroy
 
 # goto > Ceph >Poos > create <ceph-replica> Pool 
 
-
+```
 
 
 
