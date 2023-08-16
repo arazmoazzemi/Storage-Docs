@@ -3,7 +3,7 @@
 
 
 ----
-*Add repsitory*
+*Add repsitory:*
 
 ```
 # deb http://ftp.debian.org/debian bookworm main contrib
@@ -20,8 +20,11 @@ deb http://security.debian.org/debian-security bookworm-security main contrib
 deb http://download.proxmox.com/debian/ceph-quincy bookworm no-subscription
 ```
 
+*Add hostnames for all nodes:*
 
------------------------------------hosts------------------------------
+```
+# hosts
+
 127.0.0.1 localhost.localdomain localhost
 192.168.200.51 pve01.mylab.loc pve01
 192.168.200.52 pve02.mylab.loc pve02
@@ -37,6 +40,8 @@ ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ff02::3 ip6-allhosts
+```
+
 
 ----------------------create <ceph-mgr-dashboard> after configure monitor nodes-------------------------------
 
