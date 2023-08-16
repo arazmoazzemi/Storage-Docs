@@ -78,7 +78,9 @@ ceph-volume lvm zap /dev/sdb --destroy
 
 
 
------------------ok-ntp-server---------------------------
+*NTP Server:*
+
+```
 # crette ntp server with digibox >  192.168.200.50
 
 # all nodes
@@ -91,7 +93,7 @@ nano /etc/chrony/chrony.conf
 server 192.168.200.50 iburst
 
 systemctl restart chronyd
-
+```
 
 
 
