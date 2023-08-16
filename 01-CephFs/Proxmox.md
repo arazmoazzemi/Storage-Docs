@@ -98,9 +98,11 @@ systemctl restart chronyd
 
 
 
-------------destory-pool-----------------------------
+*destory-pool*
 
+```
 pveceph pool destroy <pool> --force
+```
 
 
 
@@ -110,8 +112,6 @@ pveceph pool destroy <pool> --force
 
 
 
-
-----------------------------ubuntu-------------------------------
 
 
 
