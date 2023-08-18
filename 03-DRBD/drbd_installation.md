@@ -2,6 +2,9 @@
 
 *https://www.canarytek.com/2017/09/06/DRBD_NFS_Cluster.html*
 
+
+*Create bound0*
+```
 modeinfo bonding | more
 #cahhnel_bonding_driver_version
 
@@ -63,7 +66,7 @@ cat /proc/net/bonding/bond0
 
 
 
-
+```
 
 -----------------------------------------------------------------------
 
