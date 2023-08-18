@@ -107,9 +107,9 @@ yum -y install drbd90-utils kmod-drbd90
 #Firewall_Configuration
 #Disable_SELINUX
 
-sestatus
+$ sestatus
 
-nano /etc/selinux/config
+$ nano /etc/selinux/config
 
 #SELINUX=enforcing
 SELINUX=disabled
