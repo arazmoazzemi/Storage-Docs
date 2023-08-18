@@ -6,12 +6,12 @@
 *Create NIC bound0:*
 
 ```
-modeinfo bonding | more
+$ modeinfo bonding | more
 #cahhnel_bonding_driver_version
 
 
 --------bond0------------------------------------------------
-nano /etc/sysconfig/network-scripts/ifcfg-bond0
+$ nano /etc/sysconfig/network-scripts/ifcfg-bond0
 
 DEVICE=bond0
 TYPE=Bond
@@ -26,11 +26,11 @@ DNS1=8.8.8.8
 BONDING_OPTS="mode=5 miimon=100" 
 
 -------bond0-------------------------------------------------
-ifconfig
+$ ifconfig
 
-cd /etc/sysconfig/network-scripts/
+$ cd /etc/sysconfig/network-scripts/
 
-vi ifcfg-eno1
+$ vi ifcfg-eno1
 
 TYPE=Ethernet
 BOOTPROTO=none
@@ -43,7 +43,7 @@ SLAVE=yes
 
 ---------------bond0-----------------------------------------------
 
-vi ifcfg-en02
+$ vi ifcfg-en02
 
 TYPE=Ethernet
 BOOTPROTO=none
@@ -55,11 +55,17 @@ SLAVE=yes
 
 
 
+```
 
 
-systemctl restart network
+```
+
+$ systemctl restart network
+
+```
 
 
+```
 cat /proc/net/bonding/bond0
 
 
