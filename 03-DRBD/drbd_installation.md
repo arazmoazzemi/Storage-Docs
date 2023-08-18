@@ -1,4 +1,4 @@
-https://www.canarytek.com/2017/09/06/DRBD_NFS_Cluster.html
+*https://www.canarytek.com/2017/09/06/DRBD_NFS_Cluster.html*
 
 modeinfo bonding | more
 #cahhnel_bonding_driver_version
