@@ -56,7 +56,6 @@ SLAVE=yes
 
 ```
 
-
 ```
 
 $ systemctl restart network
@@ -116,7 +115,7 @@ sudo shutdown -r now
 
 #systemctl disable firewalld
 
-iptables -L
+$ iptables -L
 
 iptables -P INPUT ACCEPT
 iptables -P OUTPUT ACCEPT
