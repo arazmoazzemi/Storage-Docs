@@ -2,13 +2,11 @@
 
 *https://www.canarytek.com/2017/09/06/DRBD_NFS_Cluster.html*
 
-
 *Create NIC bound0:*
 
 ```
 $ modeinfo bonding | more
 #cahhnel_bonding_driver_version
-
 
 --------bond0------------------------------------------------
 $ nano /etc/sysconfig/network-scripts/ifcfg-bond0
