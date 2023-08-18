@@ -66,7 +66,7 @@ $ systemctl restart network
 
 
 ```
-cat /proc/net/bonding/bond0
+$ cat /proc/net/bonding/bond0
 
 
 
@@ -74,10 +74,10 @@ cat /proc/net/bonding/bond0
 
 ```
 
-yum install nano -y
+$ yum install nano -y
 
 
-nano /etc/hosts
+$ nano /etc/hosts
 
 192.168.31.51 ds01
 192.168.31.52 ds02
@@ -87,11 +87,11 @@ nano /etc/hosts
 
 -----Very_importatnt(Prevent_package_Installation_error)---------------------------------------------------------------------
 
-yum install ntp -y
-timedatectl set-timezone Asia/Tehran
-ntpdate pool.ntp.org
-service ntpd start
-systemctl enable ntpd.service
+$ yum install ntp -y
+$ timedatectl set-timezone Asia/Tehran
+$ ntpdate pool.ntp.org
+$ service ntpd start
+$ systemctl enable ntpd.service
 
 --------------------------------------------------------------
 #rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org
