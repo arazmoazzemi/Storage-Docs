@@ -54,7 +54,6 @@ MASTER=bond0
 SLAVE=yes
 
 
-
 ```
 
 
@@ -67,7 +66,6 @@ $ systemctl restart network
 
 ```
 $ cat /proc/net/bonding/bond0
-
 
 
 ```
