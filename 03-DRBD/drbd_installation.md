@@ -3,13 +3,11 @@
 *https://www.canarytek.com/2017/09/06/DRBD_NFS_Cluster.html*
 
 
-*Create bound0*
+*Create NIC bound0:*
+
 ```
 modeinfo bonding | more
 #cahhnel_bonding_driver_version
-
-
-
 
 
 --------bond0------------------------------------------------
@@ -68,14 +66,7 @@ cat /proc/net/bonding/bond0
 
 ```
 
------------------------------------------------------------------------
-
-
-
-
-
-
----------------------------------------------------------------------------------------------------------------------------
+```
 
 yum install nano -y
 
@@ -85,7 +76,7 @@ nano /etc/hosts
 192.168.31.51 ds01
 192.168.31.52 ds02
 
-
+```
 
 
 -----Very_importatnt(Prevent_package_Installation_error)---------------------------------------------------------------------
