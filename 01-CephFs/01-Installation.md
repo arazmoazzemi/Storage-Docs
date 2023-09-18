@@ -17,11 +17,11 @@ sudo mv cephadm  /usr/local/bin/
 ```bash
 apt-get install cephadm -y
 
+
 nano	/etc/hostname
 
+# Add hosname info to each one of nodes:
 nano /etc/hosts
-
-
 172.16.100.2 ceph01 
 172.16.100.3 ceph02 
 172.16.100.4 ceph03
