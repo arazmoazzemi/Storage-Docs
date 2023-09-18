@@ -10,16 +10,12 @@ sudo mv cephadm  /usr/local/bin/
 ```
 ----
 
-- ceph-quincy installation:
+### ceph-quincy installation:
 
-Add least 3 raw disk to each host
-
-
-install cephadm for all nodes
-
-
+- Add least 3 raw disk to each host
+- install cephadm for all nodes
+```bash
 apt-get install cephadm -y
-
 
 nano	/etc/hostname
 
@@ -35,7 +31,7 @@ nano /etc/hosts
 ssh-kegen -t rsa -b 2048
 
 
-
+```
 
 
 
