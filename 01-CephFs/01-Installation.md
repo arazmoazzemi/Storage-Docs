@@ -43,16 +43,11 @@ ceph status
 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCtBODFmWWvjJsyjtZx6uC4MNjcaecy1xUMr6IcQPMgEMsbeifEdBYxLbqDGnYGT8d7tQob1uOvFyLFBWRtuoh9oYqojstWaQ/pAINCPt3G88l9ZDm+pwvU15D+R46eTpJ3ZXT2jGVjjraTuCXAQiRS2x6K2va6/Tt3ExCcI4+LUsV4mFwqeOCdcB8WgMilsGUCF2kb2Ry+yBI5tpFf1WV8CQz5ZMpDWOsCP0P2oRn619mYCkWAsc43arGaTzu8dJDkbEbJ7JVqO8Us7U0wbqCy8sb3Dz6JBFh4ML/DrJC9ZsLiTlN0ZkaXVklwsavmvtpunNkKyfonlqFy6C4s85ii3exLVQjvBh60TEHoo/TGZusmlF8ZazgeBTRTtPt8BBS7ZVOd+skMr+lhUXRxhCW7ZhWSQ8GeYKLT2JFV8pR31OH2Bqc0q/mQwiMx7pmoZ7Dqh7fxw+TCxbhPrKi/pRq24r/4gnFiGY1pr/hmnzDfPmIZ+sEwrQM+AAAGJQuxA1U= ceph-79d97108-55b6-11ee-b1e5-3367a4942ce6
 
-Copy [ceph01]ceph.pub to [ceph02]
+# Copy [ceph01]ceph.pub to [ceph02]
 [ceph02] nano ~/.ssh/authorized_keys
 
-
-Copy [ceph01]ceph.pub to [ceph03]
+# Copy [ceph01]ceph.pub to [ceph03]
 [ceph03] nano ~/.ssh/authorized_keys
-
-
-
-
 
 cephadm shell
 ceph orch host ls
