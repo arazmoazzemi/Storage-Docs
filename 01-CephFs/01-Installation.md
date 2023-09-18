@@ -1,8 +1,3 @@
-# opennebula
-# A start job is running for wait for network to be configured.
-
-sudo systemctl disable NetworkManager-wait-online.service
-sudo systemctl mask systemd-networkd-wait-online.service
 
 
 
@@ -126,35 +121,13 @@ ceph -s
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---------------------------------------------------------------------------
 
+# opennebula
+# A start job is running for wait for network to be configured.
+
+sudo systemctl disable NetworkManager-wait-online.service
+sudo systemctl mask systemd-networkd-wait-online.service
 
 
 
