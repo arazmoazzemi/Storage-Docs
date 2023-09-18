@@ -27,10 +27,8 @@ nano /etc/hosts
 172.16.100.4 ceph03
 
 
-
+# create ssh key
 ssh-kegen -t rsa -b 2048
-
-
 ```
 
 
