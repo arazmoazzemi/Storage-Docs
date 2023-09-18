@@ -61,6 +61,7 @@ ceph orch ls
 ceph orch ps
 ceph orch device ls
 
+---------------------------------------------------------------------------------
 ceph01  /dev/sda  hdd   QEMU_HARDDISK_drive-scsi0-0-0-0  10.7G  Yes        8m ago
 ceph01  /dev/sdb  hdd   QEMU_HARDDISK_drive-scsi0-0-1-0  10.7G  Yes        8m ago
 ceph01  /dev/sdc  hdd   QEMU_HARDDISK_drive-scsi0-0-2-0  10.7G  Yes        8m ago
@@ -70,10 +71,7 @@ ceph02  /dev/sdc  hdd   QEMU_HARDDISK_drive-scsi0-0-2-0  10.7G  Yes        5m ag
 ceph03  /dev/sda  hdd   QEMU_HARDDISK_drive-scsi0-0-0-0  10.7G  Yes        4m ago
 ceph03  /dev/sdb  hdd   QEMU_HARDDISK_drive-scsi0-0-1-0  10.7G  Yes        4m ago
 ceph03  /dev/sdc  hdd   QEMU_HARDDISK_drive-scsi0-0-2-0  10.7G  Yes        4m ago
-
-
-
-
+---------------------------------------------------------------------------------
 
 
 ceph orch daemon add osd ceph01:/dev/sda
