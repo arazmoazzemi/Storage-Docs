@@ -1,6 +1,6 @@
 CephFS ubuntu_22.04 installation:
 
-- reef:
+- reef version:
 - [releases versions](https://download.ceph.com/)
 ```bash
 CEPH_RELEASE=18.2.0 # replace this with the active release
@@ -8,6 +8,7 @@ curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELE
 chmod +x cephadm
 sudo mv cephadm  /usr/local/bin/
 ```
+----
 ------------------ceph-quincy ------------------------------------
 
 Add least 3 raw disk to each host
