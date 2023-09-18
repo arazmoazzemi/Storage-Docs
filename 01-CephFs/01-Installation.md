@@ -33,10 +33,10 @@ ssh-kegen -t rsa -b 2048
 ----
 
 # master node
-
+```bash
 cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --initial-dashboard-password "password" --dashboard-password-noupdate --cluster-network=172.16.100.0/24
-
-ceph status 
+ceph status
+```
 
 [ceph01] cat /etc/ceph/ceph.pub
 
