@@ -1,7 +1,7 @@
 CephFS ubuntu_22.04 installation:
 
+- reef:
 
---------------------reef-----------------------------------
 # releases versions:
 # https://download.ceph.com/
 CEPH_RELEASE=18.2.0 # replace this with the active release
