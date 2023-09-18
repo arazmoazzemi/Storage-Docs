@@ -1,9 +1,8 @@
 CephFS ubuntu_22.04 installation:
 
 - reef:
+- [releases versions](https://download.ceph.com/)
 ```bash
-# releases versions:
-# https://download.ceph.com/
 CEPH_RELEASE=18.2.0 # replace this with the active release
 curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
 chmod +x cephadm
