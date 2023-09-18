@@ -9,7 +9,8 @@ chmod +x cephadm
 sudo mv cephadm  /usr/local/bin/
 ```
 ----
-------------------ceph-quincy ------------------------------------
+
+- ceph-quincy installation:
 
 Add least 3 raw disk to each host
 
