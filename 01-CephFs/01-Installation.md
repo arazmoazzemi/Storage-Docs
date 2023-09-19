@@ -82,9 +82,11 @@ ceph status
 
 ceph osd df tree
 ```
+---
 
------------------------ceph-client-node-----------------------------------
+### ceph-client-node
 [master node]
+```
 ceph versions
 
 cat /etc/os-release
@@ -94,7 +96,7 @@ apt install ceph-common
 
 rpmquery ceph-common
 ceph -s
-
+```
 
 
 -----------------upgrade quincy to reef----------------------
