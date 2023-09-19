@@ -1,4 +1,4 @@
-# 📖 CephFS ubuntu_22.04 installation: :
+## 📖 CephFS ubuntu_22.04 installation:
 
 - reef version: 
 - [releases versions](https://download.ceph.com/)
