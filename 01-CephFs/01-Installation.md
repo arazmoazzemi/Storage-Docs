@@ -88,12 +88,8 @@ ceph osd df tree
 [master node]
 ```
 ceph versions
-
 cat /etc/os-release
-
-
 apt install ceph-common
-
 rpmquery ceph-common
 ceph -s
 ```
