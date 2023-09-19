@@ -1,6 +1,6 @@
-CephFS ubuntu_22.04 installation:
+# 📖 CephFS ubuntu_22.04 installation: :
 
-- reef version:
+- reef version: 
 - [releases versions](https://download.ceph.com/)
 ```bash
 CEPH_RELEASE=18.2.0 # replace this with the active release
