@@ -17,7 +17,7 @@ sudo mv cephadm  /usr/local/bin/
 ```bash
 apt-get install cephadm -y
 
-# Edit hosnames:
+# Edit hostnames:
 nano	/etc/hostname
 
 # Add hosname info to each one of nodes:
