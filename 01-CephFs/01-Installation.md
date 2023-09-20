@@ -32,6 +32,16 @@ ssh-kegen -t rsa -b 2048
 ```
 ----
 
+- ssh-key
+```
+sudo ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph01
+sudo ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph02
+sudo ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph03
+```
+
+
+
+
 - master node[ceph01]:
 ```bash
 cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --initial-dashboard-password "password" --dashboard-password-noupdate --cluster-network=172.16.100.0/24
