@@ -32,6 +32,22 @@ ssh-kegen -t rsa -b 2048
 ```
 ----
 
+- Install chrony
+```bash
+apt install chrony -y
+
+nano /etc/chrony/chrony.conf
+
+server 192.168.31.104 iburst
+server 0.asia.pool.ntp.org iburst
+server 1.asia.pool.ntp.org iburst
+server 2.asia.pool.ntp.org iburst
+server 3.asia.pool.ntp.org iburst
+
+systemctl restart chronyd
+
+```
+----
 - ssh-key
 ```
 sudo ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph01
