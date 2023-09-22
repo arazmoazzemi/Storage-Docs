@@ -10,7 +10,7 @@ sudo mv cephadm  /usr/local/bin/
 ```
 ----
 
-### ceph-quincy installation:
+### ceph-quincy installation(LAB):
 
 - Add least 3 raw disk to each host
 - install cephadm for all nodes
