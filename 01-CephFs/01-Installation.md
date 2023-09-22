@@ -48,15 +48,6 @@ systemctl restart chronyd
 
 ```
 ----
-- ssh-key
-```
-sudo ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph01
-sudo ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph02
-sudo ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph03
-```
-
-
-
 
 - master node[ceph01]:
 ```bash
