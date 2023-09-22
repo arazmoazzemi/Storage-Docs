@@ -11,6 +11,7 @@ curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELE
 chmod +x cephadm
 
 sudo ./cephadm add-repo --release reef
+# python3.8 ./cephadm <arguments...> install 
 sudo ./cephadm install
 
 which cephadm
