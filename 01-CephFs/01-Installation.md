@@ -3,10 +3,22 @@
 - reef version: 
 - [releases versions](https://download.ceph.com/)
 ```bash
-CEPH_RELEASE=18.2.0 # replace this with the active release
+sudo apt install -y curl
+
+CEPH_RELEASE=18.2.0 
 curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
+
 chmod +x cephadm
-sudo mv cephadm  /usr/local/bin/
+
+sudo ./cephadm add-repo --release reef
+sudo ./cephadm install
+
+which cephadm
+
+sudo apt install -y lvm2
+
+cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --initial-dashboard-password "password" --dashboard-password-noupdate --cluster-network=172.16.100.0/24
+
 ```
 ----
 
