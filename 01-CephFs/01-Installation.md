@@ -4,18 +4,16 @@
 - [releases versions](https://download.ceph.com/)
 ```bash
 sudo apt install -y curl
+sudo apt install -y lvm2
 
 CEPH_RELEASE=18.2.0 
 curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
-
 chmod +x cephadm
 
 sudo ./cephadm add-repo --release reef
 sudo ./cephadm install
 
 which cephadm
-
-sudo apt install -y lvm2
 
 cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --initial-dashboard-password "password" --dashboard-password-noupdate --cluster-network=172.16.100.0/24
 
