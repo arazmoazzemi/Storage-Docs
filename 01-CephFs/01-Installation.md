@@ -77,6 +77,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCtBODFmWWvjJsyjtZx6uC4MNjcaecy1xUMr6IcQPMg
 # Copy [ceph01]ceph.pub to [ceph03]
 [ceph03] nano ~/.ssh/authorized_keys
 
+# [Master Node]
 cephadm shell
 ceph orch host ls
 cat /etc/hosts
