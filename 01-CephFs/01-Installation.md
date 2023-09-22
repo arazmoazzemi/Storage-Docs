@@ -64,7 +64,6 @@ systemctl restart chronyd
 ```bash
 cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --initial-dashboard-password "password" --dashboard-password-noupdate --cluster-network=172.16.100.0/24
 
-ceph status
 ```
 
 ```bash
