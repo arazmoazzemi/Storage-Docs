@@ -18,7 +18,7 @@ chmod +x cephadm
 sudo ./cephadm add-repo --release reef
 
 # python3.8 ./cephadm <arguments...> install 
-python3.8 ./cephadm install -y
+python3.8 ./cephadm install 
 
 which cephadm
 
