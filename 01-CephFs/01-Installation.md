@@ -2,7 +2,7 @@
 ## [CEPH RELEASES](https://docs.ceph.com/en/latest/releases/#active-releases)
 
 
-- reef version: 
+- [reef version](https://docs.ceph.com/en/latest/releases/reef/)
 - [releases versions](https://download.ceph.com/)
 ```bash
 sudo apt install software-properties-common
