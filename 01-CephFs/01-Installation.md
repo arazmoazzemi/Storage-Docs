@@ -46,7 +46,7 @@ nano /etc/hosts
 
 
 # create ssh key
-ssh-kegen -t rsa -b 2048
+ssh-keygen -t rsa -b 2048
 ```
 ----
 
