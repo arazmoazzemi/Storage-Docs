@@ -5,9 +5,9 @@
 - [reef version](https://docs.ceph.com/en/latest/releases/reef/)
 - [releases versions](https://download.ceph.com/)
 ```bash
-sudo apt install software-properties-common
+sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.8
+sudo apt install python3.8 -y
 
 sudo apt install -y curl
 sudo apt install -y lvm2
