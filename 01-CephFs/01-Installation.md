@@ -3,20 +3,25 @@
 - reef version: 
 - [releases versions](https://download.ceph.com/)
 ```bash
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.8
+
 sudo apt install -y curl
 sudo apt install -y lvm2
 
 CEPH_RELEASE=18.2.0 
 curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
 chmod +x cephadm
-
 sudo ./cephadm add-repo --release reef
+
 # python3.8 ./cephadm <arguments...> install 
-sudo ./cephadm install
+python3.8 ./cephadm install
 
 which cephadm
 
-cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --initial-dashboard-password "password" --dashboard-password-noupdate --cluster-network=172.16.100.0/24
+python3.8 cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --initial-dashboard-password "password" --dashboard-password-noupdate --cluster-network=172.16.100.0/24
+
 
 ```
 ----
