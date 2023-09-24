@@ -97,6 +97,7 @@ ceph orch ls
 ceph orch ps
 ceph orch device ls
 
+
 # Output example:
 ---------------------------------------------------------------------------------
 ceph01  /dev/sda  hdd   QEMU_HARDDISK_drive-scsi0-0-0-0  10.7G  Yes        8m ago
@@ -117,6 +118,8 @@ ceph orch daemon add osd ceph03:/dev/sda
 ceph status
 
 ceph osd df tree
+
+ceph osd pool ls detail
 ```
 ---
 
