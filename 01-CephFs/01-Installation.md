@@ -110,10 +110,13 @@ ceph03  /dev/sda  hdd   QEMU_HARDDISK_drive-scsi0-0-0-0  10.7G  Yes        4m ag
 ceph03  /dev/sdb  hdd   QEMU_HARDDISK_drive-scsi0-0-1-0  10.7G  Yes        4m ago
 ceph03  /dev/sdc  hdd   QEMU_HARDDISK_drive-scsi0-0-2-0  10.7G  Yes        4m ago
 ---------------------------------------------------------------------------------
+# test
+# ceph orch apply osd --all-available-devices --dry-run
+
+# Create automate pool
 # ceph orch apply osd --all-available-devices
 
-
-
+# Create Custom pool
 ceph orch daemon add osd ceph01:/dev/sda
 ceph orch daemon add osd ceph02:/dev/sda
 ceph orch daemon add osd ceph03:/dev/sda
