@@ -130,6 +130,10 @@ ceph osd pool ls detail
 
 ### AUTOSCALING PLACEMENT GROUPS
 
+```bash
+ceph osd pool ls detail
+```
+
 Note! PG = PGP --- > 32 = 32
 
 Enable:
