@@ -128,11 +128,17 @@ ceph osd pool ls detail
 ```
 ---
 
+### AUTOSCALING PLACEMENT GROUPS
 
+Enable:
 ```bash
 ceph osd pool set foo pg_autoscale_mode on
 ```
 
+disable:
+```bash
+ceph osd pool set noautoscale
+```
 
 
 ----
