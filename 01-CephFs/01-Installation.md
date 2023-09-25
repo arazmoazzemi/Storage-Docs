@@ -152,7 +152,9 @@ ceph osd pool autoscale-status
 
 ----
 ### ceph-client-node
-[master node]
+https://github.com/dokan-dev/dokany
+https://cloudbase.it/ceph-for-windows/
+
 ```
 ceph versions
 cat /etc/os-release
