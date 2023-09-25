@@ -138,6 +138,7 @@ ceph osd pool set foo pg_autoscale_mode on
 disable:
 ```bash
 ceph osd pool set noautoscale
+ceph osd pool unset noautoscale
 ```
 
 
