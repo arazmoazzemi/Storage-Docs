@@ -128,7 +128,7 @@ ceph osd pool ls detail
 ```
 ---
 
-### AUTOSCALING PLACEMENT GROUPS
+### [AUTOSCALING PLACEMENT GROUPS](https://docs.ceph.com/en/latest/rados/operations/placement-groups/)
 
 ```bash
 ceph osd pool ls detail
