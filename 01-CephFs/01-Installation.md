@@ -128,6 +128,14 @@ ceph osd pool ls detail
 ```
 ---
 
+
+```bash
+ceph osd pool set foo pg_autoscale_mode on
+```
+
+
+
+----
 ### ceph-client-node
 [master node]
 ```
@@ -137,6 +145,11 @@ apt install ceph-common
 rpmquery ceph-common
 ceph -s
 ```
+
+
+
+
+
 
 
 -----------------upgrade quincy to reef----------------------
