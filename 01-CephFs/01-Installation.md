@@ -4,7 +4,7 @@
 
 - [reef version](https://docs.ceph.com/en/latest/releases/reef/)
 - [releases versions](https://download.ceph.com/)
-- Binary install:
+Binary install:
 ```bash
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa
