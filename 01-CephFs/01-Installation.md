@@ -159,7 +159,7 @@ ceph osd pool autoscale-status
 ----
 ## CEPH rbd client-node:
 
-- ### 01:
+### 01:
 - ### [client] 
 ```bash
 apt install ceph-common
@@ -168,7 +168,7 @@ ls
 ```
 
 ### 02:
-### [ceph01]
+- ### [ceph01]
 ```bash
 scp /etc/ceph/ceph.conf root@172.16.100.5:/etc/ceph
 scp /etc/ceph/ceph.client.admin.keyring root@172.16.100.5:/etc/ceph
@@ -180,8 +180,8 @@ ceph osd pool application enable datastore rbd
 
 
 ### 03:
-## Go back on the client side:
-### [client]
+- ## Go back on the client side:
+- ### [client]
 ```bash
 rbd create --size 4096 --pool datastore vol01
 lsblk
