@@ -68,7 +68,7 @@ server 1.asia.pool.ntp.org iburst
 server 2.asia.pool.ntp.org iburst
 server 3.asia.pool.ntp.org iburst
 
-systemctl restart chronyd
+systemctl enable chronyd && systemctl restart chronyd
 
 ```
 ----
