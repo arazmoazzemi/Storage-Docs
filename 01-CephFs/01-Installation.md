@@ -183,44 +183,19 @@ ceph osd pool application enable datastore rbd
 ### 03:
 ## Go back on the client side:
 ### [client]
-
-
+```bash
 rbd create --size 4096 --pool datastore vol01
-
 lsblk
-
 rbd map vol01 --pool datastore
-
 lsblk
-
 rbd ls -p datastore
-
 df -h
-
 mkfs.ext4 -m0 /dev/rbd/datastore/vol01
-
 mkdir /var/vol01
-
 mount /dev/rbd/datastore/vol01 /var/vol01
+```
 
-
-
-# cephadm shell
-
-# ceph auth get-or-create client.rbd mon 'allow r' osd 'allow rwx pool=newpool16' \
-# -o /etc/ceph/rbd.keyring
-
-# 
-
-#
-
-
-systemctl disable NetworkManager-wait-online.service
-systemctl mask systemd-networkd-wait-online.service
-
-
-
-----
+---
 
 ### NFS Ganasha:
 
