@@ -58,6 +58,10 @@ apt install chrony -y
 
 nano /etc/chrony/chrony.conf
 
+server ceph01 iburst
+server ceph02 iburst
+server ceph03 iburst
+
 server 192.168.31.104 iburst
 server 0.asia.pool.ntp.org iburst
 server 1.asia.pool.ntp.org iburst
