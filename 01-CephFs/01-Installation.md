@@ -157,9 +157,8 @@ ceph osd pool autoscale-status
 
 
 ----
-## ceph-client-node:
+## CEPH rbd client-node:
 
-------------------rbd client--------------------------------------------
 - ### 01:
 - ### [client] 
 ```bash
