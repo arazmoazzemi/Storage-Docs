@@ -163,6 +163,29 @@ cat /etc/os-release
 apt install ceph-common
 rpmquery ceph-common
 ceph -s
+
+pt-get update -y
+apt -y install nfs-ganesha-ceph
+
+cephadm shell
+ceph mgr module enable nfs
+
+ceph nfs cluster create nfsganesha "1 ceph01 ceph02 ceph03" --ingress --virtual-ip 172.16.100.100/24
+ceph orch ls --service_name=ingress.nfs.nfsganesha
+
+ceph nfs cluster ls
+ceph nfs cluster info nfsganesha
+
+
+ceph osd pool create nfsganesha
+ceph osd pool application enable nfsganesha nfs
+rbd pool init -p nfsganesha
+
+ceph orch apply nfs nfsganesha --placement="3 ceph01 ceph02 ceph03"
+ceph orch ls
+ceph orch ps --daemon_type=nfs
+
+
 ```
 
 
