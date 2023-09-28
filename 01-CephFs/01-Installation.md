@@ -157,6 +157,12 @@ ceph osd pool autoscale-status
 https://github.com/dokan-dev/dokany
 https://cloudbase.it/ceph-for-windows/
 
+```bash
+ceph fs volume create testfs --placement="3 ceph01 ceph02 ceph03"
+
+ceph nfs export create cephfs nfsganesha /ceph testfs --path=/
+```
+
 ```
 ceph versions
 cat /etc/os-release
