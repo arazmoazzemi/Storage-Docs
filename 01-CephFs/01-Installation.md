@@ -180,9 +180,9 @@ ceph osd pool application enable datastore rbd
 ```
 
 
-Go back on the client side:
-03:
-[client]
+### 03:
+## Go back on the client side:
+### [client]
 
 
 rbd create --size 4096 --pool datastore vol01
