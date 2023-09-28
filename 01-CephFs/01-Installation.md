@@ -153,7 +153,73 @@ ceph osd pool autoscale-status
 
 
 ----
-### ceph-client-node
+## ceph-client-node:
+
+------------------rbd client--------------------------------------------
+
+01:
+[client]
+
+apt install ceph-common
+
+cd /etc/ceph
+
+
+02:
+[ceph01]
+
+scp /etc/ceph/ceph.conf root@172.16.100.5:/etc/ceph
+scp /etc/ceph/ceph.client.admin.keyring root@172.16.100.5:/etc/ceph
+
+cephadm shell
+ceph osd pool create datastore 32 32 
+ceph osd pool application enable datastore rbd
+
+
+Go back on the client side:
+03:
+[client]
+
+
+rbd create --size 4096 --pool datastore vol01
+
+lsblk
+
+rbd map vol01 --pool datastore
+
+lsblk
+
+rbd ls -p datastore
+
+df -h
+
+mkfs.ext4 -m0 /dev/rbd/datastore/vol01
+
+mkdir /var/vol01
+
+mount /dev/rbd/datastore/vol01 /var/vol01
+
+
+
+# cephadm shell
+
+# ceph auth get-or-create client.rbd mon 'allow r' osd 'allow rwx pool=newpool16' \
+# -o /etc/ceph/rbd.keyring
+
+# 
+
+#
+
+
+systemctl disable NetworkManager-wait-online.service
+systemctl mask systemd-networkd-wait-online.service
+
+
+
+----
+
+### NFS Ganasha:
+
 https://github.com/dokan-dev/dokany
 https://cloudbase.it/ceph-for-windows/
 
