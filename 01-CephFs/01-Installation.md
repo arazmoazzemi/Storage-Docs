@@ -160,8 +160,8 @@ ceph osd pool autoscale-status
 ## ceph-client-node:
 
 ------------------rbd client--------------------------------------------
-### 01:
-### [client] 
+- ### 01:
+- ### [client] 
 ```bash
 apt install ceph-common
 cd /etc/ceph
