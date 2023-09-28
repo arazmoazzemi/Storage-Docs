@@ -169,13 +169,15 @@ ls
 ```
 
 ### 02:
-###[ceph01]
+### [ceph01]
+```bash
 scp /etc/ceph/ceph.conf root@172.16.100.5:/etc/ceph
 scp /etc/ceph/ceph.client.admin.keyring root@172.16.100.5:/etc/ceph
 
 cephadm shell
 ceph osd pool create datastore 32 32 
 ceph osd pool application enable datastore rbd
+```
 
 
 Go back on the client side:
