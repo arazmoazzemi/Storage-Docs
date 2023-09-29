@@ -276,14 +276,44 @@ aws configure
 
 echo -e "172.16.100.2 ceph01" >> /etc/hosts
 
-# Create buckets:
-aws s3 mb s3://araz-test-bucket --endpoint-url http://ceph01:80
+Command Line tool to Access Object Storage
 
-# Upload files to buckets
-aws s3 cp  /etc/hosts s3://araz-test-bucket --endpoint-url http://ceph01:80
 
-# Show buckets
- aws s3 ls --endpoint-url http://ceph01:80
+# Create bucket:
+aws s3 mb s3://araz-test-bucket --endpoint-url http://ceph01
+
+# List bucket:
+aws s3 ls --endpoint-url http://ceph01
+
+# Upload object to bucket:
+aws s3 cp  /etc/hosts s3://araz-test-bucket --endpoint-url http://ceph01
+
+# Download a Specific File:
+aws s3 cp s3://araz-test-bucket/hosts . --endpoint-url http://172.16.100.2
+
+# Download Files with a Specific Prefix
+aws s3 cp s3://your-bucket-name/your-prefix/ . --recursive
+
+# Show files into bucket:
+aws s3 ls s3://araz-test-bucket --endpoint-url http://ceph01 
+
+# Remove a bucket:
+aws s3 rb s3://araz-test-bucket --endpoint-url http://ceph01
+
+# Delete object from bucket:
+aws s3 rm  s3://araz-test-bucket --endpoint-url http://ceph01
+
+# Sync a folder
+aws s3 sync /root/local s3://araz-test-bucket --endpoint-url http://ceph01
+
+
+
+
+
+
+
+
+
 
 
 ```
