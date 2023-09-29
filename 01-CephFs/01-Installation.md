@@ -200,9 +200,9 @@ mount /dev/rbd/datastore/vol01 /var/vol01
 ---
 
 # object gateway:
-
 [ceph01]
 
+```bash
 cephadm shell
 
 radosgw-admin realm create --rgw-realm=eu --default
@@ -212,7 +212,11 @@ ceph orch apply rgw default eu --placement="3 ceph01 ceph02 ceph03"
 radosgw-admin user create --uid=araz --display-name=araz --email=arazmoazzemi@gmail.com --system
 radosgw-admin period update --commit
 
-### radosgw-admin zone modify --rgw-zone=eu --access-key=J37IRU3QZPC8MOO167PT --secret=yZc3ay3CEI8RWltd7UDVasyF47qn3eDOXcXFb68v
+ceph status
+```
+
+```bash
+# radosgw-admin zone modify --rgw-zone=eu --access-key=J37IRU3QZPC8MOO167PT --secret=yZc3ay3CEI8RWltd7UDVasyF47qn3eDOXcXFb68v
 
 # ceph dashboard set-rgw-api-ssl-verify false
 
@@ -222,11 +226,11 @@ radosgw-admin period update --commit
 # radosgw-admin period update --commit
 # radosgw-admin zonegroup delete --rgw-zonegroup=default
 # radosgw-admin period update --commit
+```
 
 
 
 
-ceph status
 
 
 
