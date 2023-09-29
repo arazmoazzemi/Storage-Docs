@@ -229,26 +229,13 @@ ceph status
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-# Access Ceph object storage using S3 API
+# Access Ceph object storage using S3 API:
 [ceph01]
 
+```bash
 radosgw-admin user create --uid=araz --display-name=araz --email=arazmoazzemi@gmail.com --system
-
 radosgw-admin user info --uid=araz
-
-
-
-
+```
 
 [client]
 
