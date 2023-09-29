@@ -312,10 +312,6 @@ aws s3 sync /root/local s3://araz-test-bucket --endpoint-url http://ceph01
 
 
 
-
-
-
-
 ```
 
 ----
