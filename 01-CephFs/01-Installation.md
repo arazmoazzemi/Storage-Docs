@@ -172,7 +172,7 @@ ceph osd pool autoscale-status
 ### 01:
 - ### [client] 
 ```bash
-apt install ceph-common
+apt install ceph-common -y
 cd /etc/ceph
 ls
 ```
