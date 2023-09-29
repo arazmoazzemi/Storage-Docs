@@ -276,10 +276,15 @@ aws configure
 
 echo -e "172.16.100.2 ceph01" >> /etc/hosts
 
+# Create buckets:
 aws s3 mb s3://araz-test-bucket --endpoint-url http://ceph01:80
 
-
+# Upload files to buckets
 aws s3 cp  /etc/hosts s3://araz-test-bucket --endpoint-url http://ceph01:80
+
+# Show buckets
+ aws s3 ls --endpoint-url http://ceph01:80
+
 
 ```
 
