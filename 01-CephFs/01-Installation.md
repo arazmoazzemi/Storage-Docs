@@ -157,6 +157,7 @@ ceph osd pool autoscale-status
 
 
 ----
+----
 ## CEPH rbd client-node:
 
 ### 01:
@@ -195,6 +196,105 @@ mount /dev/rbd/datastore/vol01 /var/vol01
 ```
 
 ---
+---
+
+-----------------------------------------------------------object gateway-----------------------------
+
+[ceph01]
+
+cephadm shell
+
+radosgw-admin realm create --rgw-realm=eu --default
+radosgw-admin zonegroup create --rgw-zonegroup=eu --endpoints=http://ceph01,http://ceph02,http://ceph03 --rgw-realm=eu --master --default
+radosgw-admin zone create --rgw-zonegroup=eu --endpoints=http://ceph01,http://ceph02,http://ceph03 --rgw-zone=eu --master --default
+ceph orch apply rgw default eu --placement="3 ceph01 ceph02 ceph03"
+radosgw-admin user create --uid=araz --display-name=araz --email=arazmoazzemi@gmail.com --system
+radosgw-admin period update --commit
+
+### radosgw-admin zone modify --rgw-zone=eu --access-key=J37IRU3QZPC8MOO167PT --secret=yZc3ay3CEI8RWltd7UDVasyF47qn3eDOXcXFb68v
+
+# ceph dashboard set-rgw-api-ssl-verify false
+
+# radosgw-admin zonegroup remove --rgw-zonegroup=default --rgw-zone=default
+# radosgw-admin period update --commit
+# radosgw-admin zone delete --rgw-zone=default
+# radosgw-admin period update --commit
+# radosgw-admin zonegroup delete --rgw-zonegroup=default
+# radosgw-admin period update --commit
+
+
+
+
+ceph status
+
+
+
+
+
+
+
+
+# Access Ceph object storage using S3 API
+[ceph01]
+
+radosgw-admin user create --uid=araz --display-name=araz --email=arazmoazzemi@gmail.com --system
+
+radosgw-admin user info --uid=araz
+
+
+
+
+
+[client]
+
+sudo apt-get install awscli
+
+apt install python3-pip
+
+pip3 install awscli --upgrade --user
+
+OR
+
+pip3 install awscli --force-reinstall --upgrade
+
+
+
+IMPORTANT NOTE! 
+radosgw-admin zonegroup get
+# set eu for client
+# Default region name [eu]:
+
+
+aws configure
+
+AWS Access Key ID [****************67PT]:
+AWS Secret Access Key [****************b68v]:
+Default region name [eu]:
+Default output format [None]:
+
+
+
+Example:
+
+ "keys": [
+        {
+            "user": "araz",
+            "access_key": "SCQKP0INSJUO4YSK5MGL",
+            "secret_key": "heN2bstIGxDkBdomf1NnLDPkUY5nsfAY8r0eWm99"
+        }
+
+
+
+echo -e "172.16.100.2 ceph01" >> /etc/hosts
+
+aws s3 mb s3://araz-test-bucket --endpoint-url http://ceph01:80
+
+
+aws s3 cp  /etc/hosts s3://araz-test-bucket --endpoint-url http://ceph01:80
+
+
+
+
 
 ### NFS Ganasha:
 
