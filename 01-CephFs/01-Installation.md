@@ -196,9 +196,10 @@ mount /dev/rbd/datastore/vol01 /var/vol01
 ```
 
 ---
+***
 ---
 
------------------------------------------------------------object gateway-----------------------------
+# object gateway:
 
 [ceph01]
 
