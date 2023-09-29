@@ -319,8 +319,12 @@ aws s3 rb s3://araz-test-bucket --endpoint-url http://ceph01
 # Delete object from bucket:
 aws s3 rm  s3://araz-test-bucket --endpoint-url http://ceph01
 
-# Sync a folder:
+# Sync a folder, put:
 aws s3 sync /root/local s3://araz-test-bucket --endpoint-url http://ceph01
+
+# Sync a folder, get:
+aws s3 sync s3://araz-test-bucket /root/local --endpoint-url http://ceph01
+
 
 # Sync a folder for windows clients:
 aws s3 sync c:\\01 s3://araz-test-bucket --endpoint-url http://172.16.100.2
