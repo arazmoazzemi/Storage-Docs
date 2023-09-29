@@ -155,7 +155,6 @@ ceph osd pool unset noautoscale
 ceph osd pool autoscale-status
 ```
 
-
 ----
 ----
 ## CEPH rbd client-node:
@@ -239,23 +238,21 @@ radosgw-admin user info --uid=araz
 
 [client]
 
-sudo apt-get install awscli
+```bash
+# sudo apt-get install awscli
 
 apt install python3-pip
-
 pip3 install awscli --upgrade --user
-
-OR
-
+# OR
 pip3 install awscli --force-reinstall --upgrade
+```
 
-
-
-IMPORTANT NOTE! 
+IMPORTANT NOTE! [ceph01]
+```bash
 radosgw-admin zonegroup get
 # set eu for client
 # Default region name [eu]:
-
+```
 
 aws configure
 
