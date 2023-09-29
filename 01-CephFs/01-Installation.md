@@ -249,20 +249,21 @@ pip3 install awscli --upgrade --user
 pip3 install awscli --force-reinstall --upgrade
 ```
 
-Common Error!
+If Me/You faced below Error!😆😢
 ```bash
 make_bucket failed: s3://araz-test-bucket An error occurred (InvalidLocationConstraint) when calling the CreateBucket operation: The specified location-constraint is not valid
 ```
 
-IMPORTANT NOTE! [ceph01]
+Solved! [ceph01]
 ```bash
 cephadm shell
 
 radosgw-admin zonegroup get
-# set eu for client
+# set eu(region) for client
 # Default region name [eu]:
 ```
 
+[client]
 aws configure
 
 AWS Access Key ID [****************67PT]:
