@@ -344,6 +344,7 @@ aws s3 sync c:\\01 s3://araz-test-bucket --endpoint-url http://172.16.100.2
 ### NFS Ganasha:
 
 https://github.com/dokan-dev/dokany
+
 https://cloudbase.it/ceph-for-windows/
 
 ```bash
@@ -359,7 +360,7 @@ apt install ceph-common
 rpmquery ceph-common
 ceph -s
 
-pt-get update -y
+apt-get update -y
 apt -y install nfs-ganesha-ceph
 
 cephadm shell
