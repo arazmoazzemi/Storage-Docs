@@ -215,6 +215,12 @@ ceph status
 ```
 
 ```bash
+radosgw-admin realm list
+radosgw-admin zonegroup list
+radosgw-admin zone list
+```
+
+```bash
 # radosgw-admin zone modify --rgw-zone=eu --access-key=J37IRU3QZPC8MOO167PT --secret=yZc3ay3CEI8RWltd7UDVasyF47qn3eDOXcXFb68v
 
 # ceph dashboard set-rgw-api-ssl-verify false
