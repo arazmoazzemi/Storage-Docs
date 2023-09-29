@@ -264,24 +264,14 @@ radosgw-admin zonegroup get
 ```
 
 [client]
+
+```bash
 aws configure
 
-AWS Access Key ID [****************67PT]:
-AWS Secret Access Key [****************b68v]:
-Default region name [eu]:
-Default output format [None]:
-
-
-
-Example:
-
- "keys": [
-        {
-            "user": "araz",
-            "access_key": "SCQKP0INSJUO4YSK5MGL",
-            "secret_key": "heN2bstIGxDkBdomf1NnLDPkUY5nsfAY8r0eWm99"
-        }
-
+# AWS Access Key ID [****************67PT]:
+# AWS Secret Access Key [****************b68v]:
+# Default region name [eu]: Solved Here! 😆😢
+# Default output format [None]:json
 
 
 echo -e "172.16.100.2 ceph01" >> /etc/hosts
@@ -291,8 +281,11 @@ aws s3 mb s3://araz-test-bucket --endpoint-url http://ceph01:80
 
 aws s3 cp  /etc/hosts s3://araz-test-bucket --endpoint-url http://ceph01:80
 
+```
 
-
+----
+----
+----
 
 
 ### NFS Ganasha:
