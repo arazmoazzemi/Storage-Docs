@@ -348,21 +348,22 @@ https://github.com/dokan-dev/dokany
 https://cloudbase.it/ceph-for-windows/
 
 ```bash
-ceph fs volume create testfs --placement="3 ceph01 ceph02 ceph03"
+# ceph fs volume create testfs --placement="3 ceph01 ceph02 ceph03"
 
-ceph nfs export create cephfs nfsganesha /ceph testfs --path=/
+# ceph nfs export create cephfs nfsganesha /ceph testfs --path=/
 ```
 
 ```
-ceph versions
+[client]
+# ceph versions
 cat /etc/os-release
-apt install ceph-common
-rpmquery ceph-common
+apt install ceph-common -y
 ceph -s
-
 apt-get update -y
 apt -y install nfs-ganesha-ceph
 
+
+[ceph01]
 cephadm shell
 ceph mgr module enable nfs
 
