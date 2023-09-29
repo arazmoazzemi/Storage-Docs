@@ -17,9 +17,9 @@ CEPH_RELEASE=18.2.0
 curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
 chmod +x cephadm
 # sudo mv cephadm  /usr/local/bin/
-sudo ./cephadm add-repo --release reef
-
+#sudo ./cephadm add-repo --release reef
 # python3.8 ./cephadm <arguments...> install
+
 python3.8 ./cephadm add-repo --release reef
 python3.8 ./cephadm install 
 
