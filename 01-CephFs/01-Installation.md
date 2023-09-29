@@ -249,12 +249,12 @@ pip3 install awscli --upgrade --user
 pip3 install awscli --force-reinstall --upgrade
 ```
 
-If Me/You faced below Error!😆😢
+If Me/You faced with below Error!😆😢
 ```bash
 make_bucket failed: s3://araz-test-bucket An error occurred (InvalidLocationConstraint) when calling the CreateBucket operation: The specified location-constraint is not valid
 ```
 
-Solved! [ceph01]
+Solved it! [ceph01]
 ```bash
 cephadm shell
 
