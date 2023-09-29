@@ -232,6 +232,8 @@ ceph status
 [ceph01]
 
 ```bash
+cephadm shell
+
 radosgw-admin user create --uid=araz --display-name=araz --email=arazmoazzemi@gmail.com --system
 radosgw-admin user info --uid=araz
 ```
@@ -249,6 +251,8 @@ pip3 install awscli --force-reinstall --upgrade
 
 IMPORTANT NOTE! [ceph01]
 ```bash
+cephadm shell
+
 radosgw-admin zonegroup get
 # set eu for client
 # Default region name [eu]:
