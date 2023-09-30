@@ -355,12 +355,7 @@ https://cloudbase.it/ceph-for-windows/
 
 ```
 [client]
-# ceph versions
-cat /etc/os-release
-apt install ceph-common -y
-ceph -s
-apt-get update -y
-apt -y install nfs-ganesha-ceph
+apt -y install nfs-common
 
 
 [ceph01]
