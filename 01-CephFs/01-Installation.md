@@ -364,6 +364,10 @@ apt -y install nfs-ganesha-ceph
 
 
 [ceph01]
+apt -y install nfs-ganesha-ceph
+
+cephadm shell
+
 ceph mgr module enable nfs
 ceph nfs cluster create nfsganesha "1 ceph01 ceph02 ceph03" --ingress --virtual-ip 172.16.100.100/24
 ceph orch ls --service_name=ingress.nfs.nfsganesha
