@@ -110,6 +110,13 @@ cephadm shell
 ceph orch host ls
 cat /etc/hosts
 
+
+ceph osd set norebalance 
+ceph osd set noout 
+ceph osd set norecover
+ceph osd set noscrub
+ceph osd set nodeep-scrub
+
 ceph orch host add ceph02 172.16.100.3
 ceph orch host add ceph03 172.16.100.4
 
