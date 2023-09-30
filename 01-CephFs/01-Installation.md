@@ -384,18 +384,6 @@ apt -y install nfs-common
 
 
 
-
-
-
-
------------------upgrade quincy to reef----------------------
-
-
-
-
-
-
-
 ----
 
 ### opennebula
