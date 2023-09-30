@@ -354,8 +354,7 @@ https://cloudbase.it/ceph-for-windows/
 ```
 
 ```
-[client]
-apt -y install nfs-common
+
 
 
 [ceph01]
@@ -376,6 +375,8 @@ ceph orch apply nfs nfsganesha --placement="3 ceph01 ceph02 ceph03"
 ceph nfs export create cephfs nfsganesha /ceph-files testfs --path=/
 
 
+[client]
+apt -y install nfs-common
 
 
 
