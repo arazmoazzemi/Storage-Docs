@@ -376,7 +376,12 @@ ceph nfs export create cephfs nfsganesha /ceph-files testfs --path=/
 
 
 [client]
-apt -y install nfs-common
+apt-get install nfs-common -y
+
+sudo mount -t nfs -O vers=4.2 172.16.100.100:/ceph-files /mnt/
+# OR
+sudo mount -t nfs4 172.16.100.100:/ceph-files /mnt
+
 
 
 
