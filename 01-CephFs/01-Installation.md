@@ -83,11 +83,16 @@ cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --in
 ```bash
 [ceph01]
 # Copy keys:
-ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph02
-ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph03
+cephadm shell
+ssh-keygen -t rsa -b 2048
 
 ssh-copy-id  root@ceph02
 ssh-copy-id  root@ceph03
+
+ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph02
+ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph03
+
+
 
 # OR
 [ceph01] cat /etc/ceph/ceph.pub
