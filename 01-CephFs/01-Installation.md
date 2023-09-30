@@ -79,6 +79,9 @@ systemctl enable chronyd && systemctl restart chronyd
 cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --initial-dashboard-password "password" --dashboard-password-noupdate --cluster-network=172.16.100.0/24
 
 ```
+----
+
+# Deplosy OSD hosts:
 
 ```bash
 [ceph01]
@@ -91,8 +94,6 @@ ssh-copy-id  root@ceph03
 
 ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph02
 ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph03
-
-
 
 # OR
 [ceph01] cat /etc/ceph/ceph.pub
@@ -110,6 +111,7 @@ cephadm shell
 ceph orch host ls
 cat /etc/hosts
 
+# Before deploy OSD hosts:
 
 ceph osd set norebalance 
 ceph osd set noout 
@@ -117,9 +119,20 @@ ceph osd set norecover
 ceph osd set noscrub
 ceph osd set nodeep-scrub
 
+# Depoloy OSD hosts:
+
 ceph orch host add ceph02 172.16.100.3
 ceph orch host add ceph03 172.16.100.4
 
+# After deploy OSD hosts:
+
+ceph osd unset norebalance 
+ceph osd unset noout 
+ceph osd unset norecover
+ceph osd unset noscrub
+ceph osd unset nodeep-scrub
+
+# info
 ceph status
 ceph orch ls
 ceph orch ps
