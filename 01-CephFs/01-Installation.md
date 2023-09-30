@@ -348,17 +348,7 @@ https://github.com/dokan-dev/dokany
 https://cloudbase.it/ceph-for-windows/
 
 ```bash
-# ceph fs volume create testfs --placement="3 ceph01 ceph02 ceph03"
-
-# ceph nfs export create cephfs nfsganesha /ceph testfs --path=/
-```
-
-```
-
-
-
-[ceph01]
-apt -y install nfs-ganesha-ceph
+# apt -y install nfs-ganesha-ceph
 
 cephadm shell
 
@@ -370,9 +360,13 @@ ceph osd pool application enable nfsganesha nfs
 rbd pool init -p nfsganesha
 
 
-ceph fs volume create testfs --placement="3 ceph01 ceph02 ceph03"
+ceph fs volume create ganeshafs --placement="3 ceph01 ceph02 ceph03"
 ceph orch apply nfs nfsganesha --placement="3 ceph01 ceph02 ceph03"
-ceph nfs export create cephfs nfsganesha /ceph-files testfs --path=/
+ceph nfs export create cephfs nfsganesha /ceph-files ganeshafs --path=/
+
+
+# [CephFS NFS Export]
+# {Cluster:nfsganesha}{Storage Backend:CephFS} {Volume:ganeshafs} {CephFS Path:/} {NFS Protocol:NFSv4} {Pseudo:/ceph-files}
 
 
 [client]
