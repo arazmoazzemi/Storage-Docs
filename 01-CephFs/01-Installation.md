@@ -198,8 +198,9 @@ ceph osd pool autoscale-status
 - ### [client] 
 ```bash
 apt install ceph-common -y
-cd /etc/ceph
-ls
+echo -e "172.16.100.2 ceph01" >> /etc/hosts
+echo -e "172.16.100.3 ceph02" >> /etc/hosts
+echo -e "172.16.100.4 ceph03" >> /etc/hosts
 ```
 
 ### 02:
