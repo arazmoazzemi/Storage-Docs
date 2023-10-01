@@ -121,8 +121,8 @@ ceph osd set nodeep-scrub
 
 # Depoloy OSD hosts:
 
-ceph orch host add ceph02 172.16.100.3
-ceph orch host add ceph03 172.16.100.4
+ceph orch host add label ceph02 172.16.100.3 mon
+ceph orch host add label ceph03 172.16.100.4 mon
 
 # After deploy OSD hosts:
 
