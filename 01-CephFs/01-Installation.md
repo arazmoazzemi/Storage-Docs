@@ -426,6 +426,46 @@ systemctl mask systemd-networkd-wait-online.service
 
 
 
+-------------------------------Check list------------------------------------
+----
+ssh -F=(ceph cephadm get-ssh-config) -i=(ceph config-key get mgr/cephadm/ssh_identity_key)root@ceph01
+
+ssh -F =(ceph cephadm get-ssh-config) -i =(ceph config-key get mgr/cephadm/ssh_identity_key) root@ceph02
+
+
+
+
+
+
+
+# Monitor logs:
+ceph -W cephadm
+
+
+
+ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph02
+ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph03
+
+
+ceph cephadm get-pub-key > ~/ceph.pub
+ls~/
+
+ssh-copy-id -f -i ~/ceph.pub root@ceph02
+ssh-copy-id -f -i ~/ceph.pub root@ceph03
+
+ceph orch host add ceph02 172.16.100.3 
+ceph orch host add ceph03 172.16.100.4 
+
+
+
+ceph orch host label add <host_name> <role>
+then add OSD daemons to the disks:
+
+ceph orch daemon add osd ceph-1:/dev/sdm
+ceph orch daemon add osd ceph-1:/dev/sdn
+This is available too, but I don't recommend using it:
+
+
 
 
 
