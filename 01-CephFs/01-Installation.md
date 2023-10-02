@@ -1,10 +1,11 @@
 ## 📖 CephFS ubuntu_22.04 installation:
 ## [CEPH RELEASES](https://docs.ceph.com/en/latest/releases/#active-releases)
-
+----
 
 - [reef version](https://docs.ceph.com/en/latest/releases/reef/)
 - [releases versions](https://download.ceph.com/)
 
+----
 Binary install:
 ```bash
 sudo apt install software-properties-common -y
