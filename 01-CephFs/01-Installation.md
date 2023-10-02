@@ -8,7 +8,7 @@
 ----
 Binary install:
 
-- Note:  Before start below steps, Set your correct timezone:
+- Note:  Before start below steps, Set your correct timezone(timedatectl && chrony):
 
 ```bash
 
