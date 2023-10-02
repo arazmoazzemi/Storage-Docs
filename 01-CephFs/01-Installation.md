@@ -8,7 +8,10 @@
 ----
 Binary install:
 
+- Note:  Before start below steps, Set your correct timezone:
+
 ```bash
+
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:deadsnakes/ppa -y &&
 sudo apt install python3.8 -y
