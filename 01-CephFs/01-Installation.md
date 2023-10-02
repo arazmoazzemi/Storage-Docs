@@ -57,6 +57,9 @@ ssh-keygen -t rsa -b 2048
 ```bash
 apt install chrony -y
 
+hwclock
+timedatectl set timezone <Your timezone>
+
 nano /etc/chrony/chrony.conf
 
 # local ntp server
