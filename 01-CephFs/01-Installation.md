@@ -54,10 +54,13 @@ nano	/etc/hostname
 # Add hostname info to each one of nodes:
 # Delete All content of hosts and just add, Below informations:
 
-nano /etc/hosts
-172.16.100.2 ceph01 
-172.16.100.3 ceph02 
-172.16.100.4 ceph03
+mv /etc/hosts /etc/hosts.orig
+touch /etc/hosts
+
+echo -e "172.16.100.2 ceph01" >> /etc/hosts
+echo -e "172.16.100.3 ceph02" >> /etc/hosts
+echo -e "172.16.100.4 ceph03" >> /etc/hosts
+
 
 
 # create ssh key
