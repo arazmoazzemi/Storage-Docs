@@ -1,4 +1,4 @@
-## 📖 CephFS ubuntu_22.04 installation:
+## 📖 CephFS ubuntu_22.04 installation:😏 
 ## [CEPH RELEASES](https://docs.ceph.com/en/latest/releases/#active-releases)
 
 #### Use below DNS for limited connections:😔
