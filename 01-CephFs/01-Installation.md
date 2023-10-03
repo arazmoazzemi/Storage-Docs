@@ -52,6 +52,8 @@ apt-get install cephadm -y
 nano	/etc/hostname
 
 # Add hostname info to each one of nodes:
+# Delete All content of hosts and just add, Below informations:
+
 nano /etc/hosts
 172.16.100.2 ceph01 
 172.16.100.3 ceph02 
