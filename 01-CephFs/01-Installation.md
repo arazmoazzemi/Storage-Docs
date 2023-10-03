@@ -49,7 +49,7 @@ python3.8 cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "user
 apt-get install cephadm -y
 
 # Edit hostnames:
-Note! ---> Add hostname info to each one of nodes:
+# Note! ---> Add hostname info to each one of nodes:
 # Delete All content of hosts and just add, Below informations:
 
 mv /etc/hosts /etc/hosts.orig
