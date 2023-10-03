@@ -64,7 +64,8 @@ ssh-keygen -t rsa -b 2048
 apt install chrony -y
 
 hwclock
-timedatectl set timezone <Your timezone>
+timedatectl set-timezone <Time/Zone>
+
 
 nano /etc/chrony/chrony.conf
 
