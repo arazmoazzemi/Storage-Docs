@@ -8,7 +8,7 @@
 $ modeinfo bonding | more
 #cahhnel_bonding_driver_version
 
---------bond0------------------------------------------------
+--------bond0----------------
 $ nano /etc/sysconfig/network-scripts/ifcfg-bond0
 
 DEVICE=bond0
