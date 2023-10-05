@@ -2,8 +2,11 @@
 ## [CEPH RELEASES](https://docs.ceph.com/en/latest/releases/#active-releases)
 
 #### Use below DNS for limited connections:😔
-#### DNS1: 185.55.225.25 
-#### DNS2: 185.55.226.26
+#### DNS1:  185.55.225.25 
+#### DNS2:  185.55.226.26
+>>>> OR
+##### DNS1:  10.202.10.202   
+##### DNS2:  10.202.10.102
 ----
 
 - [reef version](https://docs.ceph.com/en/latest/releases/reef/)
