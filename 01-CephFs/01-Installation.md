@@ -1,6 +1,6 @@
 ## 📖 CephFS ubuntu_22.04 installation:😏 
 ## [CEPH RELEASES](https://docs.ceph.com/en/latest/releases/#active-releases)
-
+>
 #### Use below DNS for limited connections:😔
 #### DNS1:  185.55.225.25 
 #### DNS2:  185.55.226.26
