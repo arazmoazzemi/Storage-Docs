@@ -4,7 +4,7 @@
 #### Use below DNS for limited connections:😔
 #### DNS1:  185.55.225.25 
 #### DNS2:  185.55.226.26
->> OR 
+>>OR>> OR 
 ##### DNS1:  10.202.10.202   
 ##### DNS2:  10.202.10.102
 ----
