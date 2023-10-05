@@ -420,8 +420,6 @@ sudo mount -t nfs -O vers=4.2 172.16.100.100:/ceph-files /mnt/
 sudo mount -t nfs4 172.16.100.100:/ceph-files /mnt
 
 
-
-
 ```
 
 
