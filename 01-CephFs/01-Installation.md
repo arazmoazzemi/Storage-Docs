@@ -14,7 +14,7 @@ rm /etc/resolv.conf
 cat <<EOF > /etc/resolv.conf
 nameserver 10.202.10.202
 nameserver 10.202.10.102
-EO
+EOF
 ``` 
 ##### DNS1:  10.202.10.202   
 ##### DNS2:  10.202.10.102
