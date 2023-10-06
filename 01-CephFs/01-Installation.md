@@ -18,6 +18,7 @@ EO
 ``` 
 ##### DNS1:  10.202.10.202   
 ##### DNS2:  10.202.10.102
+
 ----
 
 - [reef version](https://docs.ceph.com/en/latest/releases/reef/)
