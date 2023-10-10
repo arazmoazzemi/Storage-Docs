@@ -138,7 +138,7 @@ firewall-cmd --reload
 ----
 
 
-
+```bash
 modprobe drbd
 lsmod | grep -i drbd
 echo drbd > /etc/modules-load.d/drbd.conf
@@ -152,8 +152,12 @@ systemctl start drbd
 #systemctl enable drbd
 
 systemctl status drbd.service
+```
 
------------------------------------------------------------------------------
+----
+
+
+
 cd /etc/drbd.d/
 
 nano mydata.res
