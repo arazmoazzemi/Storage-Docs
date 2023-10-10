@@ -105,7 +105,7 @@ yum -y install drbd90-utils kmod-drbd90
 
 ----
 
-
+```bash
 #Firewall_Configuration
 #Disable_SELINUX
 
@@ -129,7 +129,11 @@ iptables -F
 
 firewall-cmd --add-port 7789/tcp --permanent
 firewall-cmd --reload
-------------------------------------------------------------
+```
+
+----
+
+
 
 modprobe drbd
 lsmod | grep -i drbd
