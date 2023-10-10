@@ -156,7 +156,7 @@ systemctl status drbd.service
 
 ----
 
-
+```bash
 
 cd /etc/drbd.d/
 
@@ -182,7 +182,10 @@ resource mydata {
  connection-mesh {
   hosts ds01 ds02;
  }
-----------------------------------------------------------------------------------
+```
+
+----
+
 
 mv /etc/drbd.d/global_common.conf /etc/drbd.d/global_common.conf.bak
 
