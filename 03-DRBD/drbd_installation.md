@@ -117,7 +117,11 @@ $ nano /etc/selinux/config
 SELINUX=disabled
 
 sudo shutdown -r now
+```
 
+----
+
+```bash
 #systemctl disable firewalld
 
 $ iptables -L
