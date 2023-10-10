@@ -80,7 +80,8 @@ $ nano /etc/hosts
 ```
 
 
------Very_importatnt(Prevent_package_Installation_error)---------------------------------------------------------------------
+###Very_importatnt(Prevent_package_Installation_error):
+
 
 $ yum install ntp -y
 $ timedatectl set-timezone Asia/Tehran
