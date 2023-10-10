@@ -79,15 +79,20 @@ $ nano /etc/hosts
 
 ```
 
+----
 
-###Very_importatnt(Prevent_package_Installation_error):
+### Very_importatnt(Prevent_package_Installation_error):
 
-
+```bash
 $ yum install ntp -y
 $ timedatectl set-timezone Asia/Tehran
 $ ntpdate pool.ntp.org
 $ service ntpd start
 $ systemctl enable ntpd.service
+```
+----
+
+
 
 --------------------------------------------------------------
 #rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org
