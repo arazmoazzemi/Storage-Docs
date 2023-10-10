@@ -186,7 +186,7 @@ resource mydata {
 
 ----
 
-
+```bash
 mv /etc/drbd.d/global_common.conf /etc/drbd.d/global_common.conf.bak
 
 nano /etc/drbd.d/global_common.conf
@@ -230,8 +230,11 @@ common {
 
 
 #scp /etc/drbd.d/global_common.conf root@192.168.131.12:/etc/drbd.d/
+```
+----
 
--------------------------------------------------------------------------------------
+
+
 #Host1
 
 drbdadm create-md mydata
