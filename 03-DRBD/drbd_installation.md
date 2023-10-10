@@ -53,7 +53,6 @@ HWADDR=00:50:56:b6:02:4f
 MASTER=bond0
 SLAVE=yes
 
-
 ```
 
 ```bash
@@ -61,13 +60,14 @@ $ systemctl restart network
 
 ```
 
-
-```bah
+```bash
 $ cat /proc/net/bonding/bond0
 
 ```
 
-```
+----
+
+```bash
 
 $ yum install nano -y
 
