@@ -92,18 +92,19 @@ $ systemctl enable ntpd.service
 ```
 ----
 
+## #rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org
 
-
---------------------------------------------------------------
-#rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-elrepo.org
-
+```bash
 rpm -ivh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
 yum update -y
 ll /etc/yum.repos.d/
 yum info *drbd* | grep Name
 #yum -y install drbd84-utils kmod-drbd84
 yum -y install drbd90-utils kmod-drbd90
---------------------------------------------------------------------------
+```
+
+----
+
 
 #Firewall_Configuration
 #Disable_SELINUX
