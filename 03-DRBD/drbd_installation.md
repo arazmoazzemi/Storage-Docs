@@ -7,6 +7,7 @@
 ```bash
 $ modeinfo bonding | more
 ```
+
 ```bash
 ### cahhnel_bonding_driver_version
 
@@ -56,16 +57,14 @@ SLAVE=yes
 
 ```
 
-```
-
+```bash
 $ systemctl restart network
 
 ```
 
 
-```
+```bah
 $ cat /proc/net/bonding/bond0
-
 
 ```
 
