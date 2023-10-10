@@ -4,9 +4,11 @@
 
 *Create NIC bound0:*
 
-```
+```bash
 $ modeinfo bonding | more
-#cahhnel_bonding_driver_version
+```
+```bash
+### cahhnel_bonding_driver_version
 
 --------bond0----------------
 $ nano /etc/sysconfig/network-scripts/ifcfg-bond0
