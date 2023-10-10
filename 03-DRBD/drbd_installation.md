@@ -486,7 +486,6 @@ nano /etc/fstab
 sudo journalctl | grep Split-Brain
 
 
-
 drbdadm disconnect mydata
 drbdadm secondary mydata
 drbdadm -- --discard-my-data mydata connect mydata
