@@ -422,7 +422,6 @@ pcs -f cluster_config constraint order promote nfs01-clone then start nfs01_fs
 
 -----------------Floating_service_ip_used_for_NFS--------------------------------------------------------------------------------------------------------------------
 
-
 pcs -f cluster_config resource create nfs_vip01 ocf:heartbeat:IPaddr2 \
  ip=192.168.31.53 cidr_netmask=24 \
  op monitor interval=30s
