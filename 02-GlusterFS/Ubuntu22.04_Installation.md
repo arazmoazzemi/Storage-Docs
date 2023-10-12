@@ -139,7 +139,7 @@ gluster volume heal gfs-bsr-vol granular-entry-heal enable
 gluster volume set gfs-bsr-vol cluster.data-self-heal-algorithm full
 ```
 
-- *GlusterFS fstab*
+- *GlusterFS fstab:*
 ```
 #ds01:
 ds01:gfs-sr-vol /export/services glusterfs defaults,_netdev,x-systemd.automount,x-systemd.requires=glusterd.service,backup-volfile-servers=ds02:ds03,log-level=WARNING,log-file=/var/log/gluster.log
