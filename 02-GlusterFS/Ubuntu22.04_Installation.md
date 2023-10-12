@@ -181,7 +181,7 @@ echo "ds01:gfs-bsr-vol /glusterfs/gfs-bsr-vol glusterfs defaults,_netdev,backup-
 
 
 
-- *KVM*
+- *KVM:*
 ```
 nano /etc/sysctl.conf
 net.ipv4.ip_forward = 1
