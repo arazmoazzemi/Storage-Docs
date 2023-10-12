@@ -219,7 +219,7 @@ ip link
 virsh net-destroy default
 virsh net-undefine default
 
----------------------------------------
+# ---------------------------------------
 nano /etc/netplan/00-installer-config.yaml 
 
 network:
