@@ -1,6 +1,6 @@
 # ubuntu_22.04_GlusterFs:
 
-```
+```bash
 lkid
 lsblk -a
 fdisk -l
