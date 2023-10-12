@@ -106,7 +106,7 @@ gluster volume set gfs-bsr-vol cluster.favorite-child-policy mtime
 gluster volume heal gfs-bsr-vol granular-entry-heal enable
 gluster volume set gfs-bsr-vol cluster.data-self-heal-algorithm full
 
------------------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------------
 
 #ds01:gfs-bsr-vol
 gluster volume set gfs-bsr-vol cluster.heal-timeout 5
