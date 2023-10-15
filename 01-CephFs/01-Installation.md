@@ -448,13 +448,11 @@ systemctl mask systemd-networkd-wait-online.service
 
 
 -------------------------------Check list------------------------------------
+
 ----
 ssh -F=(ceph cephadm get-ssh-config) -i=(ceph config-key get mgr/cephadm/ssh_identity_key)root@ceph01
 
 ssh -F =(ceph cephadm get-ssh-config) -i =(ceph config-key get mgr/cephadm/ssh_identity_key) root@ceph02
-
-
-
 
 
 
