@@ -236,6 +236,7 @@ common {
 
 
 #Host1
+```bash
 
 drbdadm create-md mydata
 drbdadm up mydata
@@ -250,6 +251,8 @@ cat /proc/drbd
 
 
 systemctl status drbd.service
+```
+
 
 ---if_f_error----------------------------------------------
 on_both_node
