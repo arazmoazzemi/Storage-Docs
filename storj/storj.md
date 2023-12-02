@@ -17,11 +17,10 @@ https://www.storj.io/host-a-node
 https://docs.storj.io/node/get-started/identity
 
 
+---
 
-
-
-Step 3
-# Configure port forwarding
+#### Step 3:
+#### Configure port forwarding
 
 
 20988 port
