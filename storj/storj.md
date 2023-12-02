@@ -1,4 +1,4 @@
-#### Prerequisites
+#### Storj Prerequisites
 #### Hardware Requirements (Recommended)
 
 ---
