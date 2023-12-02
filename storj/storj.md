@@ -2,7 +2,8 @@
 
 leaf before where into hunt rescue face basic prevent resemble base autumn
 
-0xF3e400e5B9646F527da4fe93763b30cd0Bb2B915
+#### Get a digital wallet address:
+#### 0xF3e400e5B9646F527da4fe93763b30cd0Bb2B915
 
 ---
 
