@@ -12,10 +12,8 @@ https://www.storj.io/host-a-node
 
 ---
 
-Step 2
-# Generate node identity
-
-
+#### Step 2:
+##### Generate node identity
 https://docs.storj.io/node/get-started/identity
 
 
