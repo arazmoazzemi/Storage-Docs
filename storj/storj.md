@@ -21,18 +21,14 @@ https://docs.storj.io/node/get-started/identity
 
 #### Step 3:
 #### Configure port forwarding
-#### 20988 port
+##### 20988 port
 
 ---
 
+#### Step 4:
+##### Set up the interface
 
-
-
-
-Step 4
-# Set up the interface
-
-
+---
 
 
 
