@@ -50,19 +50,10 @@ https://docs.storj.io/node/get-started/identity
 
 
 
----------------------------------------------
 
 
 
 
-
-
-
-
-
-
-
-------------------------------
 How to Configure a Storj Node on TrueNAS SCALE
 
 https://www.youtube.com/watch?v=4gWcqxCfxBI
