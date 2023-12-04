@@ -75,6 +75,9 @@ storjnode
 
 
 
+---
+GUI Erroe
 
+https://forum.storj.io/t/problem-with-windows-installer-package/13378/3
 
 
