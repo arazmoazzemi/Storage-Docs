@@ -38,7 +38,7 @@ sudo apt install python3.8 -y
 sudo apt install -y curl
 sudo apt install -y lvm2
 
-CEPH_RELEASE=18.2.0 
+CEPH_RELEASE=18.2.2
 curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
 chmod +x cephadm
 # sudo mv cephadm  /usr/local/bin/
