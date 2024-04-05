@@ -121,7 +121,7 @@ ssh-keygen -t rsa -b 2048
 
 ssh-copy-id  root@ceph02
 ssh-copy-id  root@ceph03
-
+# Exit from shell and run below command:
 ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph02
 ssh-copy-id -f -i /etc/ceph/ceph.pub root@ceph03
 
