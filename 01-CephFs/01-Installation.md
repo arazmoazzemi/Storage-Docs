@@ -44,9 +44,11 @@ chmod +x cephadm
 # sudo mv cephadm  /usr/local/bin/
 #sudo ./cephadm add-repo --release reef
 # python3.8 ./cephadm <arguments...> install
-
 python3.8 ./cephadm add-repo --release reef
 python3.8 ./cephadm install 
+
+python3 ./cephadm add-repo --release reef
+python3 ./cephadm install 
 
 which cephadm
 
