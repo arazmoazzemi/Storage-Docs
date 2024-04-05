@@ -29,10 +29,6 @@ Binary install:
 
 - Note:  Before start below steps, Set your correct timezone(timedatectl && chrony):
 
----
-### [CEPH RELEASES (INDEX)](https://docs.ceph.com/en/latest/releases/)
----
-
 ```bash
 
 sudo apt install software-properties-common -y
