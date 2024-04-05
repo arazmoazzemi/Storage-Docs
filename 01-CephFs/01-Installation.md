@@ -31,9 +31,9 @@ Binary install:
 
 ```bash
 
-sudo apt install software-properties-common -y
-sudo add-apt-repository ppa:deadsnakes/ppa -y &&
-sudo apt install python3.8 -y
+# sudo apt install software-properties-common -y
+# sudo add-apt-repository ppa:deadsnakes/ppa -y &&
+# sudo apt install python3.8 -y
 
 sudo apt install -y curl
 sudo apt install -y lvm2
