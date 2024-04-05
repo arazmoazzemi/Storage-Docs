@@ -111,7 +111,7 @@ cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --in
 ```
 ----
 
-# Deploy OSD's for hosts:
+### Deploy OSD's for hosts:
 
 ```bash
 [ceph01]
