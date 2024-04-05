@@ -41,20 +41,24 @@ sudo apt install -y lvm2
 CEPH_RELEASE=18.2.2
 curl --silent --remote-name --location https://download.ceph.com/rpm-${CEPH_RELEASE}/el9/noarch/cephadm
 chmod +x cephadm
-# sudo mv cephadm  /usr/local/bin/
-#sudo ./cephadm add-repo --release reef
-# python3.8 ./cephadm <arguments...> install
-python3.8 ./cephadm add-repo --release reef
-python3.8 ./cephadm install 
 
 python3 ./cephadm add-repo --release reef
 python3 ./cephadm install 
 
 which cephadm
 
-# Run command on master node[ceph01]:
-python3.8 cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --initial-dashboard-password "password" --dashboard-password-noupdate --cluster-network=172.16.100.0/24
+# sudo mv cephadm  /usr/local/bin/
+#sudo ./cephadm add-repo --release reef
+# python3.8 ./cephadm <arguments...> install
+# python3.8 ./cephadm add-repo --release reef
+# python3.8 ./cephadm install 
 
+```
+
+# Run command on master node[ceph01]:
+```bash
+python3.8 cephadm bootstrap --mon-ip 172.16.100.2 --initial-dashboard-user "username" --initial-dashboard-password "password" --dashboard-password-noupdate --cluster-network=172.16.100.0/24
+```
 
 ```
 ----
